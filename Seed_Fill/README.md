@@ -1,5 +1,5 @@
 # Seed Fill/ Flood Fill algorithm
-  Seed fill also known as flood fill algorithm is an algorithm which change/modify the neighbour of the selected node if the neighbour node has the same attribute as that of the selected node.
+  [Seed fill](https://en.wikipedia.org/wiki/Flood_fill) also known as flood fill algorithm is an algorithm which change/modify the neighbour of the selected node if the neighbour node has the same attribute as that of the selected node.
   This algorithm is used in the "bucket" fill tool of the paint program.
   
   Parameters used: Start point, taget character, replacement character
