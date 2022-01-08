@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cmath>
 #include <typeinfo>
-#define func(x) (pow(x, 2) + (3*x)-5)
+#define func(x) (log(x)+pow(x,2) - 12)
 using namespace std;
 int calculate(float, float, float);
 void bisection(float, float, int);
