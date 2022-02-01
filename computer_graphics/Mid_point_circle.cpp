@@ -3,7 +3,7 @@
 #include <SDL2/SDL_bgi.h>
 using namespace std;
 //gcc filename.c -o objFileName -lSDL_bgi -lSDL2
-//r>h and k to avoid plotting the negative pixels(which probably dosen't exist).
+///r>h and k to avoid plotting the negative pixels(which probably dosen't exist).
 int main(){
     int h,k,r;
     cin>>h>>k>>r;
