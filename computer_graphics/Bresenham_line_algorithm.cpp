@@ -5,7 +5,7 @@ using namespace std;
 int main(){
 int gd = DETECT, gm , color;
 //initwindow(720,720);
-
+//test
 initgraph(&gd, &gm , NULL);
 
 float x1=10;
