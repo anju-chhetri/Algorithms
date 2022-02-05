@@ -73,3 +73,86 @@ int main(){
 }
 
 
+/*
+ //------------struct implementation
+ // g++ textures.cpp -o textures glad.c stb_image.h -ldl -lglfw
+#include <iostream>
+#define N 10
+
+using namespace std;
+
+struct stack{
+    int arr[N];
+    int top=-1;
+
+};
+void push(struct stack *s);
+void pop(struct stack *s);
+void isfull(struct stack *s);
+void isempty(struct stack *s);
+
+int main(){
+    cout<<"1.Enter \n2.Display\n3. Check if empty \n4. Check if full\n";
+    struct stack s;
+        int choice;
+
+    while(true){
+        cout<<"enter: \n";
+           cin>>choice;
+    switch(choice){
+        case 1: {
+            push(&s); break;
+        }
+        case 2:{
+            pop(&s);break;
+        }
+        case 3:{
+            isempty(&s);break;
+        }
+        case 4:{
+            isfull(&s);break;
+        }
+        char a;
+        cout<<"continue? \n";
+        cin>>a;
+        if (a=='n')
+            break;
+    }}}
+
+void push(struct stack *s){
+    int num;
+    cout<<"Enter number\n";
+    cin>>num;
+    if(s->top==(N-1)){
+       cout<<"Stack overflow.\n";
+    }
+    else{
+        s->top++;
+        s->arr[s->top] = num;
+    }
+}
+
+void pop(struct stack *s){
+    if(s->top!=-1){
+        cout<<s->arr[s->top]<<" \n";
+        s->top--;
+    }
+    else
+        cout<<"Stack Underflow\n";
+}
+
+void isfull(struct stack *s){
+    if(s->top == (N-1))
+        cout<<"Stack is full\n";
+    else
+        cout<<"stack is not full\n";
+}
+
+void isempty(struct stack *s){
+    if(s->top == -1)
+        cout<<"stack is empty.\n";
+    else
+        cout<<"stack is not empty.\n";
+}
+
+ */
