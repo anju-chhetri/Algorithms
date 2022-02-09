@@ -41,3 +41,13 @@ void bisection(float a, float b, int n){
 int calculate(float a, float b, float e){
     return (log((abs(b-a))) - log(e))/log(2);
 }
+// float trap(float x_0,float x_n, float n, float h){
+//     float sum = 0;
+//     for(int i=0;i<=n;i+=h){
+//     if(abs(i-x_0)<=0.00001 || abs(i-x_n)<=0.00001 )
+//         sum+=func(i);
+//     else
+//         sum+= (2*func(i));
+//     }
+//     return (sum*h)/2;
+// }

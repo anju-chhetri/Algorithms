@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cmath>
-#define func(x) ((4.0*x*x)-(2*x))
+#define func(x) ((4.0*x*x)-sin(x))
 //(pow(x,2)*cos(x))+ (x*sin(x))
 using namespace std;
 float trap(float x_0, float x_n, float n, float h);

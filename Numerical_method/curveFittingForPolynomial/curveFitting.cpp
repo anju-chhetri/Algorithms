@@ -55,13 +55,13 @@ int main(){
 
         }}
 
-//     for(int i=0;i<=n;i++){
-//         for(int j=0;j<=(n+1);j++){
-//             cout<<aug_mat[i][j]<<" ";
-//         }
-//         cout<<"\n";
-//     }
-    gauss_jordan(aug_mat);
+    for(int i=0;i<=n;i++){
+        for(int j=0;j<=(n+1);j++){
+            cout<<aug_mat[i][j]<<" ";
+        }
+        cout<<"\n";
+    }
+   // gauss_jordan(aug_mat);
 }
 
 
