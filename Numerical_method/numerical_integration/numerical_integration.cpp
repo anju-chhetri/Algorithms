@@ -21,13 +21,17 @@ int main(){
     float simp_8_value = simp_8(x_0, x_n, n, h);
     cout<<"The final value are:\nTrapezoidal = "<<trap_value<<"\nsimpson 1/3 = "<<simp_3_value<<"\nsimpson 3/8 = "<<simp_8_value;
 }
+
 float trap(float x_0,float x_n, float n, float h){
     float sum = 0;
-    for(int i=0;i<=n;i+=h){
-    if(abs(i-x_0)<=0.00001 || abs(i-x_n)<=0.00001 )
-        sum+=func(i);
+    float z=x_0;
+    for(int i=0;i<=int(n);i++){
+    if(i==0 || i==int(n) )
+        sum+=func(z);
     else
-        sum+= (2*func(i));
+        sum+= (2*func(z));
+
+        z+=h;
     }
     return (sum*h)/2;
 }
