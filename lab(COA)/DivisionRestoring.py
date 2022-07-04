@@ -15,16 +15,18 @@ def divide(dividend, divisor):
         A = I[:len(divisor)]
         ASUB = sub.subtraction(A,divisor)
         A = ASUB[len(ASUB) - len(A):]
-        ICopy = I[:-1]
-        if(I[0] == '1' ):
+        print("SUB: ",A)
+        ICopy = A + I[len(A):-1]
+        if(ICopy[0] == '1' ):
             ICopy += '0'
+            #print(ICopy)
             divcomp = comple2(dividend)
             addtemp= ad.add(A, divcomp)
             A = addtemp[len(addtemp) - len(A):]
         else:
             ICopy += '1'
         I = ICopy
-        print(I)
+
         count -=1
     return (I[len(divisor):], I[:len(divisor)])
 
